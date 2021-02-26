@@ -1,4 +1,4 @@
-# 什么是 textbedding
+# 什么是 textembedding
 
 [GitHub 欢迎提 pr，如果有 bug 或新需求 请反馈 issue](https://github.com/Hanscal/textembedding/issues)
 
@@ -13,16 +13,16 @@ gensim
 ```
 
 ```py
-pip3 install textbedding
+pip3 install textembedding
 ```
 
-## 使用 textbedding
+## 使用 textembedding
 
 ### 加载word2vector模型
 
 ```py
-import textbedding
-model = textbedding.load_word2vect(modelpath)
+import textembedding as tb
+model = tb.load_word2vect(modelpath)
 vect_dim = model.vector_size
 ```
 
@@ -33,7 +33,7 @@ vect_dim = model.vector_size
 **word：传入参数为需要求向量的词**
 
 ```py
-word_vect = textbedding.get_word_embedding(model,word='中国')
+word_vect = tb.get_word_embedding(model,word='中国')
 ```
 
 ### 获得句子向量
@@ -45,5 +45,5 @@ word_vect = textbedding.get_word_embedding(model,word='中国')
 **stop_words_path：用户自定义的stop words文件路径，文件和jieba的stop words格式一致**。
 
 ```py
-sent_vect = textbedding.get_sentence_embedding(model,sentence='我们缺少的不是机会，而是在机会面前将自己重新归零的勇气。',stop_words_path='')
+sent_vect = tb.get_sentence_embedding(model,sentence='我们缺少的不是机会，而是在机会面前将自己重新归零的勇气。',stop_words_path='')
 ```

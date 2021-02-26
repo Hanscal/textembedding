@@ -6,8 +6,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="textbedding",
-    version="1.0.0",
+    name="textembedding",
+    version="1.0.1",
     author="hanscal",
     author_email="hanscalcai@163.com",
     description="a library that get text embeddings",

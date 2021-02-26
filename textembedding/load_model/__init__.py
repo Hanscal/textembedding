@@ -6,8 +6,8 @@
 @Author  : hcai
 @Email   : hua.cai@unidt.com
 """
-import textbedding.load_model.load_worc2vect
+import textembedding.load_model.load_worc2vect
 
 def load_word2vect(filepath):
-    model = textbedding.load_model.load_worc2vect.load_file(filepath)
+    model = textembedding.load_model.load_worc2vect.load_file(filepath)
     return model
