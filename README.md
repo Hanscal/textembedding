@@ -28,7 +28,7 @@ vect_dim = model.vector_size
 
 ### 获得词向量
 
-**two_valve : 二值化方法，必选参数 img 为图片，可选参数 Threshold** 是灰度阀值，这里可以选择适合的值，默认值是 100 . **返回新处理过的图片**
+**model是load_word2vect加载的词向量模型** **第二个传入参数为需要求向量的词**
 
 ```py
 word_vect = textbedding.get_word_embedding(model,'中国')
@@ -36,7 +36,8 @@ word_vect = textbedding.get_word_embedding(model,'中国')
 
 ### 获得句子向量
 
-**dele_noise ：消除噪点方法，该方法使用的是八领域去噪点法，N 是领域异点个数，Z 是处理次数，处理次数越多 图形越圆滑**。
+**model是load_word2vect加载的词向量模型** **第二个传入参数为需要求向量的句子**
+**stop_words_path是用户自定义的stop words文件路径，文件和jieba的stop words格式一致**。
 
 ```py
 sent_vect = textbedding.get_sentence_embedding(model,'我是中国人，我爱我的祖国。',stop_words_path='')
