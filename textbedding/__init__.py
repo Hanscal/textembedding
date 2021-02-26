@@ -6,7 +6,7 @@
 @Author  : hcai
 @Email   : hua.cai@unidt.com
 """
-from PIL import Image
+
 import textbedding.get_embedding
 import textbedding.load_model
 

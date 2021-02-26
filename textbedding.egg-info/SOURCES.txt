@@ -1,0 +1,13 @@
+README.md
+setup.py
+textbedding/__init__.py
+textbedding.egg-info/PKG-INFO
+textbedding.egg-info/SOURCES.txt
+textbedding.egg-info/dependency_links.txt
+textbedding.egg-info/top_level.txt
+textbedding/get_embedding/__init__.py
+textbedding/get_embedding/sentence_embedding.py
+textbedding/get_embedding/utils.py
+textbedding/get_embedding/word_embedding.py
+textbedding/load_model/__init__.py
+textbedding/load_model/load_worc2vect.py

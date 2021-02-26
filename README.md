@@ -1,4 +1,4 @@
-# 什么是 textembedding
+# 什么是 textbedding
 
 [GitHub 欢迎提 pr，如果有 bug 或新需求 请反馈 issue](https://github.com/Hanscal/textembedding/issues)
 
@@ -16,12 +16,12 @@ gensim
 pip3 install pycapt
 ```
 
-## 使用 textembedding
+## 使用 textbedding
 
 ### 加载word2vector模型
 
 ```py
-import textembedding
+import textbedding
 model = textbedding.load_word2vect(modelpath)
 vect_dim = model.vector_size
 ```
