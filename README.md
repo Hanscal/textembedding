@@ -28,17 +28,22 @@ vect_dim = model.vector_size
 
 ### 获得词向量
 
-**model是load_word2vect加载的词向量模型** **第二个传入参数为需要求向量的词**
+**model是load_word2vect加载的词向量模型**
+
+**word:传入参数为需要求向量的词**
 
 ```py
-word_vect = textbedding.get_word_embedding(model,'中国')
+word_vect = textbedding.get_word_embedding(model,word='中国')
 ```
 
 ### 获得句子向量
 
-**model是load_word2vect加载的词向量模型** **第二个传入参数为需要求向量的句子**
+**model是load_word2vect加载的词向量模型**
+
+**sentence:传入参数为需要求向量的句子**
+
 **stop_words_path是用户自定义的stop words文件路径，文件和jieba的stop words格式一致**。
 
 ```py
-sent_vect = textbedding.get_sentence_embedding(model,'我是中国人，我爱我的祖国。',stop_words_path='')
+sent_vect = textbedding.get_sentence_embedding(model,sentence='我们缺少的不是机会，而是在机会面前将自己重新归零的勇气。',stop_words_path='')
 ```
