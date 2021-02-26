@@ -13,7 +13,7 @@ gensim
 ```
 
 ```py
-pip3 install pycapt
+pip3 install textbedding
 ```
 
 ## 使用 textbedding
