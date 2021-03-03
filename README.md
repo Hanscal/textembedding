@@ -47,3 +47,17 @@ word_vect = tb.get_word_embedding(model,word='中国')
 ```py
 sent_vect = tb.get_sentence_embedding(model,sentence='我们缺少的不是机会，而是在机会面前将自己重新归零的勇气。',stop_words_path='')
 ```
+
+### 获得向量相似度
+
+**query_vec：需要查询的向量**
+
+**vec_list：向量库，在该库中查询向量**
+
+**metirc_type：相似度的度量方式，目前只支持余弦相似度查询**。
+
+**返回的是从大到小排列的相似度，[(item01,item02),...,(itemn1,itemn2)],item1为相似度，item2为向量库下标**
+
+```py
+similarity = tb.get_vector_similarity(query_vect,vec_list=[vect1, vect2, vect3, vectn])
+```

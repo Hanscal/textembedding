@@ -27,3 +27,8 @@ def get_word_embedding(model,word,min=1,max=3):
 def get_sentence_embedding(model, sentence, add_pos_weight=['n','nr','ng','ns','nt','nz'],stop_words_path=None):
     sentence_vector = textembedding.get_embedding.get_sentence_embedding(model, sentence, add_pos_weight, stop_words_path)
     return sentence_vector
+
+# 获取句子相似度
+def get_vector_similarity(query_vec,vec_list,metric_type='cos'):
+    vector_similarity = textembedding.get_embedding.get_similarity(query_vec,vec_list,metric_type)
+    return vector_similarity
